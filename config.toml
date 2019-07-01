@@ -1,0 +1,80 @@
+baseurl         = "https://www.healthcareguy.com/"
+theme           = "casper-two"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
+canonifyurls    = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  Title       = "Digital Health Nexus & Data Innovators Advisory Service"
+  subtitle    = "#NoBS guide to making sense of #DigitalHealth"
+  copyright   = "© 2005-2019 Shahid N. Shah. All Rights Reserved."
+
+  cover       = "/img/cover.jpg"
+  description = "Shahid’s digital health, med tech, bio IT, life sciences IT, pharm tech, EHR/EMR/PHR &amp; health data innovators advisory service. Enjoy."
+  metaDescription = ""
+  googleAnalytics = "UA-93818-1"
+  customCSS = []
+  RSSLink = ""
+
+  twitterName = "ShahidNShah"
+  fbName = "ShahidNShah"
+  githubName = "shah"
+  linkedinName = "ShahidShah"
+  mediumName = "ShahidShah"
+
+  logo = "/img/logo-large-white-on-transparent.png"
+  floatingLogo = "/img/logo-large-black-on-transparent.png" # Shahid added this, not in theme - changed themes\casper-two\layouts\partials\header-floating-sori.html
+  orgName = "EM"
+  orgWebsite = "https://www.netspective.media"
+  orgDescription = "Netspective Media publishes opinionated insider-driven content for builders of complex & safety-critical regulated products."
+
+  showSupport = true
+
+  author = "Shahid N. Shah"
+  authorAvatar = "/img/shahid-shah-profile-pic-low-res-medium.jpg"
+  authorLocation = "Washington, DC"
+  authorWebsite = "https://www.shahidshah.com"
+  authorDescription = "Shahid Shah is an internationally recognized enterprise software guru that specializes in digital health with an emphasis on e-health, EHR/EMR, big data, iOT, data interoperability, med device connectivity, and bioinformatics."
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
+[permalinks]
+  post = "/post/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  identifier = "fa fa-home"
+  weight = 100
+ 
+[[menu.main]]
+  name = "About"
+  url = "http://shahidshah.com/"
+  weight = 90
+  
+[[menu.main]]
+name = "Speaking"
+url = "http://shahidshah.com/speaking-schedule/"
+weight = 80
+
+[[menu.main]]
+name = "Request guest article"
+identifier = "guest"
+url = "/request-guest-article/"
+weight = 70
+
+
+[[menu.main]]
+name = "Sublevel topic"
+parent = "guest"
+identifier = "sub1"
+url = "/request-guest-article/folder1/"
+weight = 60

@@ -1,0 +1,30 @@
+
+
+<article class="post">
+  {{ .Render "header" }}
+
+  {{ if .Site.Params.socialShare }}
+    <section id="social-share">
+      <ul class="icons">
+        {{ partial "share-links" . }}
+      </ul>
+    </section>
+  {{ end }}
+ 
+
+  <div id="content">
+ {{ with .Params.featured_image }}
+  {{$fi := add ($.Site.Params.imagedir | default "img") . }}
+  <img src="{{$fi | relURL}}" alt="{{$.Params.image_alt | default "Healthcareguy"}}">
+  {{ end }}
+   {{ .Content }} 
+   
+  </div>
+
+  <footer>
+    {{ .Render "footer-category" }}
+  </footer>
+
+</article>
+{{ .Render "comments" }}
+{{ .Render "prev-next" }}

@@ -1,0 +1,146 @@
+.pagination {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    color: #9eabb3;
+    text-align: center;
+}
+
+.pagination a {
+    color: #9eabb3;
+    transition: all .2s ease;
+}
+
+.page-number {
+    display: inline-block;
+    padding: 2px 0;
+    min-width: 100px;
+}
+
+.newer-posts, .older-posts {
+    position: absolute;
+    display: inline-block;
+    padding: 0 15px;
+    border: #ddd 1px dashed;
+    text-decoration: none;
+    transition: border .3s ease;
+}
+
+.newer-posts {
+    left: 0;
+}
+
+.older-posts {
+    right: 0;
+}
+
+.site-footer {
+    padding-bottom: 20px !important;
+}
+
+.nav-current a:visited {
+    color: yellow;
+}
+.top-search-row {
+}
+.top-search-row .search-query {
+    border: 0px;
+    border-radius: 3px;
+    padding: 3px 5px 4px 10px;
+    font-size: 14px;
+    width:150px;
+    color: #000;
+}
+.top-search-row .btn-default {
+    border-radius: 3px!important; 
+}
+.search-head{
+    color: #000 !important;
+}
+.post-full-content pre code {
+    color: #e5eff5;
+} 
+
+/* ::: MEDIA QUERIES ::: starts */
+
+@media (min-width: 900px) {
+    .ctsingle .post-feed {
+        margin-top: -70px;
+        padding-top: 0;    
+    } 
+    .ctsingle .site-nav {
+        position: relative;
+        top: -70px;
+    }    
+}
+
+@media (min-width: 795px) {  
+    .ctsingle .post-feed p {
+        font-size: 1.8rem;
+        line-height: 1.55em;
+    }
+}
+@media (max-width: 899px) {
+.site-nav {
+    height: inherit;
+    flex: inherit;
+    display: block;
+    text-align: center;
+    overflow-y: inherit;
+}
+.site-nav .social-links {
+    display: inline-flex!important;
+}
+.site-nav .nav {
+    display: inline-flex!important;
+    } 
+.site-nav-left {
+    display: block!important;
+    /* width: 48%; */
+    width: 100%;
+    padding-bottom: 0px!important;
+    overflow-y: inherit;
+    flex: inherit;
+    float: left;
+    margin-right:0px;
+}   
+.site-nav-right {
+    display: block!important;
+    /* width: 48%; */
+    width: 100%;
+    flex: inherit;
+    float: right;
+}
+
+.top-search-row {
+    display:inline-flex;
+}
+}
+@media (max-width: 700px) {  
+    .site-nav-right {
+        display: inherit!important;
+            margin-bottom: 20px;
+    }
+.site-header {
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+}
+.site-nav-left {
+    padding-left: 0;
+}
+}
+
+@media (max-width: 650px) {
+    .hide {
+        display: none !important;
+    }   
+    .copyright {
+        text-align: center;
+    }
+}
+
+   
+
+/* ::: MEDIA QUERIES ::: ends */

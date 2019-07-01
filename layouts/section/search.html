@@ -1,0 +1,43 @@
+{{ partial "head" . }}
+
+<body class="post-template">
+  <div class="site-wrapper"> 
+
+ {{ partial "header-sori" . }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/search.js"></script>
+
+<main id="site-main" class="outer" role="main">
+  <div class="inner">
+     
+<div class = "post-feed" id="search-results">
+     <h3></h3>
+</div>
+   
+ 
+
+<script id="search-result-template" type="text/x-js-template">
+ 
+<article class="post-card post"> 
+    <div class = "post-card-content" id="summary-${key}">
+    <div class="post-card-content">
+    <div class="post-card-content-link">
+     <header class="post-card-header"> <h2 class="post-card-title"> <a class = "search-head" href="${link}">${title}</a></header>
+    <section class="post-card-excerpt">  <p>${snippet}   </p> </section>
+      ${ isset tags }<p>Tags: ${tags}</p>${ end }
+      ${ isset categories }<p><b>Categories:</b> ${categories}</p>${ end }
+      <p><a href="${link}" class="search-read">Read More</a></p>
+      </div>
+      </div>
+    </div>
+  </article>
+      
+</script>
+    
+  </div>
+</main>
+
+{{ partial "footer" . }}
+</div>{{ partial "js" . }}</body></html>
